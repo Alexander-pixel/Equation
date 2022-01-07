@@ -6,7 +6,7 @@ Linear_Equation::Linear_Equation(int a, int b)
     Linear_Equation::b = b;
 }
 
-int Linear_Equation::getResult()const
+int Linear_Equation::getResult() const
 {
     return result;
 }
@@ -14,6 +14,6 @@ int Linear_Equation::getResult()const
 void Linear_Equation::Count()
 {
     result = -b / a;
-    cout<<"Result: "<<result<<endl;
+    cout << "Result: " << result << endl;
 }
 
