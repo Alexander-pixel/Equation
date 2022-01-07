@@ -7,17 +7,17 @@ Square_Equation::Square_Equation(int a, int b, int c)
     Square_Equation::c = c;
 }
 
-int Square_Equation::getResult1()const
+int Square_Equation::getResult1() const
 {
-    if(result1)
+    if (result1)
         return result1;
     else
         return 0;
 }
 
-int Square_Equation::getResult2()const
+int Square_Equation::getResult2() const
 {
-    if(result2)
+    if (result2)
         return result2;
     else
         return 0;
@@ -26,30 +26,30 @@ int Square_Equation::getResult2()const
 
 void Square_Equation::Count()
 {
-    if(a==0)
+    if (a == 0)
     {
-        cout<<"No result."<<endl;
+        cout << "No result." << endl;
         return;
     }
         
     
-    int des = pow(b, 2) - 4*a*c;
+    int des = pow(b, 2) - 4 * a * c;
     
-    if(des > 0)
+    if (des > 0)
     {
-        result1 = (-b + sqrt(des)) / (2*a);
-        result2 = (-b - sqrt(des)) / (2*a);
+        result1 = (-b + sqrt(des)) / (2 * a);
+        result2 = (-b - sqrt(des)) / (2 * a);
         
-        cout<< "Result_1: "<<result1<<endl;
-        cout<<"Result_2: "<<result2<<endl;
+        cout << "Result_1: " << result1 << endl;
+        cout << "Result_2: " << result2 << endl;
     }
-    else if(des == 0)
+    else if (des == 0)
     {
         result1 = -b / (2*a);
-        cout<<"Result: "<<result1<<endl;
+        cout << "Result: " << result1 << endl;
     }
     else
     {
-        cout<<"No result."<<endl;
+        cout << "No result." << endl;
     }
 }
